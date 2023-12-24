@@ -1,1 +1,2 @@
-Hello from gitHub
+	local Status = Instance.new("Folder", player)
+	Status.Name = "Status"
