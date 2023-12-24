@@ -1,1 +1,18 @@
-print("From HTTPS")
+	local Status = Instance.new("Folder", player)
+	Status.Name = "Status"
+	
+	local State = Instance.new("Folder", player)
+	State.Name = "State"
+	
+	local Blocking = Instance.new("BoolValue", State)
+	Blocking.Name = "Blocking"
+	
+	local Data
+	
+	local Good, Bad = pcall(function()
+		Data = DataGlobal:GetAsync(GetKey.Key)
+	end)
+	
+	if Data ~= nil  then
+		print("Get data successed!")
+	end
