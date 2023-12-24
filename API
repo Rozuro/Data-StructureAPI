@@ -10,7 +10,7 @@
 	local Data
 	
 	local Good, Bad = pcall(function()
-		Data = DataGlobal:GetAsync(GetKey.Key)
+		Data = DataGlobal:GetAsync(PlayerKey(player))
 	end)
 	
 	if Data ~= nil  then
