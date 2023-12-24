@@ -1,2 +1,4 @@
-	local Status = Instance.new("Folder", player)
-	Status.Name = "Status"
+function Loaded()
+local Status = Instance.new("Folder", player)
+Status.Name = "Status"
+end
